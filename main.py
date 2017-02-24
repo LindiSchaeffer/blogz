@@ -173,7 +173,7 @@ class SignupHandler(BlogHandler):
             return ""
 
     def validate_password(self, password):
-        PWD_RE = re.compile(r"^.{3,20}$")
+        PWD_RE = re.compile(r"^\.{3,20}$")
         if PWD_RE.match(password):
             return password
         else:
